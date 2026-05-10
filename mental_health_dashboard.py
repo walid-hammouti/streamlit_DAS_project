@@ -21,7 +21,7 @@ st.set_page_config(page_title="Mental Health Analysis", page_icon="🧠", layout
 def load_data():
     """Load dataset with error handling."""
     try:
-        df = pd.read_csv('scraping TP/social_media_addiction_enriched.csv')
+        df = pd.read_csv('social_media_addiction_enriched.csv')
         return df
     except FileNotFoundError:
         return None
